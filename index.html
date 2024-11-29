@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRV Tabacaria | Narguilés e Acessórios</title>
+
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="/styles/global.css" />
+
+    <!-- Meta Tags para SEO -->
+    <meta name="description" content="Encontre os melhores narguilés e acessórios na MRV Tabacaria. Qualidade e estilo para sua experiência de fumo.">
+    <meta name="keywords" content="narguilé, tabacaria, acessórios, fumo, qualidade, MRV">
+    <meta name="author" content="MRV Tabacaria">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <div class="navbar">
+        <div class="reader-inner-content">
+            <!-- Logo -->
+            <h1 class="logo"><a href="index.html">MRV Tabacaria</a></h1>
+
+            <!-- Navegação -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="conta.html">Conta</a></li>
+                </ul>
+            </nav>
+
+            <!-- Ícones -->
+            <div class="nav-icon-container">
+                <img src="/images/cart.png" alt="Carrinho" />
+                <img src="/images/menu.png" class="menu-button" alt="Menu" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabeçalho Principal -->
+    <header>
+        <div class="reader-inner-content">
+            <div class="header-bottom-side">
+                <div class="header-bottom-side-left">
+                    <h2>Descubra a excelência em cada trago</h2>
+                    <p>Nosso narguilé foi projetado para oferecer uma experiência de fumo incomparável, com qualidade, estilo e desempenho excepcionais.</p>
+                    <a href="produtos.html" class="cta-button">Ver Produtos &#8594;</a>
+                </div>
+                <div class="header-bottom-side-right">
+                 <!--  <img src="/images/products/arabic-object-hookah-silhouette-8096f0.webp" alt="Narguilé" loading="lazy" />--> 
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section id="sobre" class="gray-background">
+            <div class="reader-inner-content">
+                <h2>Sobre a MRV Tabacaria</h2>
+                <p>Na MRV Tabacaria, nossa missão é proporcionar uma experiência de fumo premium, com produtos que unem qualidade e design.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Produtos -->
+        <section id="produtos">
+            <div class="reader-inner-content">
+                <h2>Nossos Produtos</h2>
+                <div class="product-list">
+                    <!-- Produto 1 -->
+                    <div class="product-item">
+                        <img src="/images/products/images/products/narquile1.jpg" alt="Narguilé Clássico Vermelho">
+                        <h3>Narguilé Clássico Vermelho</h3>
+                        <p>Um design clássico para quem busca sofisticação.</p>
+                        <button>Comprar</button>
+                    </div>
+                    <!-- Produto 2 -->
+                    <div class="product-item">
+                        <img src="/images/products/narguile2.jpeg" alt="Narguilé Luxo Dourado">
+                        <h3>Narguilé Luxo Dourado</h3>
+                        <p>Luxo e modernidade em um único produto.</p>
+                        <button>Comprar</button>
+                    </div>
+                    <!-- Produto 3 -->
+                    <div class="product-item">
+                        <img src="images/products/narguile3.jpg" alt="Narguilé Moderno Preto">
+                        <h3>Narguilé Moderno Preto</h3>
+                        <p>Elegância e desempenho superior.</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="reader-inner-content">
+                <h2>Entre em Contato</h2>
+                <form action="/contato" method="POST">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit" class="cta-button">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="reader-inner-content">
+            <p>&copy; 2024 MRV Tabacaria. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector(".menu-button");
+
+        menuButton.addEventListener('click', () => {
+            navbar.classList.toggle("show-menu");
+        });
+    </script>
+</body>
+
+</html>
